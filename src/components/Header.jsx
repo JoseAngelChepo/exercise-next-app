@@ -1,22 +1,22 @@
-"use client"
-import { useRouter } from 'next/navigation'; 
+"use client";
+import { useRouter } from "next/navigation";
 
 const Header = () => {
   const router = useRouter();
   return (
     <>
       <header className="container-header">
-        <h1 className="font-bold">Titulo</h1>
+        <h1 className="font-bold">New project</h1>
         <div className="flex gap-10">
           <p
-            style={{ cursor: 'pointer' }}
-            onClick={() => router.push('/about')}
+            style={{ cursor: "pointer" }}
+            onClick={() => router.push("/about")}
           >
             Acerca
           </p>
           <p
-            style={{ cursor: 'pointer' }}
-            onClick={() => router.push('/profile')}
+            style={{ cursor: "pointer" }}
+            onClick={() => router.push("/profile")}
           >
             Perfil
           </p>
@@ -26,14 +26,14 @@ const Header = () => {
         {`
           .container-header {
             display: flex;
-            align-items:center;
+            align-items: center;
             justify-content: space-between;
-            padding: 10px 10px;
+            padding: 30px 50px;
           }
         `}
       </style>
     </>
-  )
-}
+  );
+};
 
 export default Header;
